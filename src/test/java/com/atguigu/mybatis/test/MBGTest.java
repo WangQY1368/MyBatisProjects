@@ -26,8 +26,8 @@ public class MBGTest {
             EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
 
             /*查询所有数据*/
-            /*List<Emp> list = mapper.selectByExample(null);
-            list.forEach(emp -> System.out.println(emp));*/
+            List<Emp> list = mapper.selectByExample(null);
+            list.forEach(emp -> System.out.println(emp));
 
             /*根据条件查询*/
             /*EmpExample empExample = new EmpExample();
